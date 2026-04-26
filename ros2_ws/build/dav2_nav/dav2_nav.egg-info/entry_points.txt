@@ -1,0 +1,4 @@
+[console_scripts]
+controller_node = dav2_nav.controller_node:main
+dav2_node = dav2_nav.dav2_node:main
+nav_node = dav2_nav.nav_node:main

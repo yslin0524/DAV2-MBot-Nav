@@ -1,29 +1,14 @@
-dav2_node:
-  ros__parameters:
-    encoder: vits
-    checkpoint_path: checkpoints/depth_anything_v2_metric_hypersim_vits.pth
-    max_depth: 20.0
-    input_size: 518
-    device: auto
-
 nav_node:
   ros__parameters:
-    close_thresh_m: 0.6
+    close_thresh_m: 1.0
     safe_dist_m: 2.0
-    nogo_thresh: 0.6
-    smooth_kernel: 31
-    min_depth_m: 0.2
-    max_depth_m: 20.0
-    roi_top_frac: 0.0
+    nogo_thresh: 0.65
     roi_bottom_frac: 0.7
-    decision_period_s: 2.0
-    min_frames_per_decision: 1
-    republish_period_s: 0.5
-    publish_cost_map: false
 
 controller_node:
   ros__parameters:
-    linear_speed: 0.15
-    angular_speed: 0.6
-    stop_on_stale: 5.0
-    control_rate_hz: 20.0
+    linear_speed: 0.10
+    angular_speed: 0.3
+    publish_rate: 20.0
+    stale_timeout: 2.0
+    run_duration: 30.0

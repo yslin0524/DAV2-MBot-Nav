@@ -1,0 +1,47 @@
+running egg_info
+creating ../../build/dav2_nav/dav2_nav.egg-info
+writing ../../build/dav2_nav/dav2_nav.egg-info/PKG-INFO
+writing dependency_links to ../../build/dav2_nav/dav2_nav.egg-info/dependency_links.txt
+writing entry points to ../../build/dav2_nav/dav2_nav.egg-info/entry_points.txt
+writing requirements to ../../build/dav2_nav/dav2_nav.egg-info/requires.txt
+writing top-level names to ../../build/dav2_nav/dav2_nav.egg-info/top_level.txt
+writing manifest file '../../build/dav2_nav/dav2_nav.egg-info/SOURCES.txt'
+reading manifest file '../../build/dav2_nav/dav2_nav.egg-info/SOURCES.txt'
+writing manifest file '../../build/dav2_nav/dav2_nav.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/mbot/DAV2-MBot-Nav/ros2_ws/build/dav2_nav/build
+creating /home/mbot/DAV2-MBot-Nav/ros2_ws/build/dav2_nav/build/lib
+creating /home/mbot/DAV2-MBot-Nav/ros2_ws/build/dav2_nav/build/lib/dav2_nav
+copying dav2_nav/nav_node.py -> /home/mbot/DAV2-MBot-Nav/ros2_ws/build/dav2_nav/build/lib/dav2_nav
+copying dav2_nav/dav2_node.py -> /home/mbot/DAV2-MBot-Nav/ros2_ws/build/dav2_nav/build/lib/dav2_nav
+copying dav2_nav/__init__.py -> /home/mbot/DAV2-MBot-Nav/ros2_ws/build/dav2_nav/build/lib/dav2_nav
+copying dav2_nav/controller_node.py -> /home/mbot/DAV2-MBot-Nav/ros2_ws/build/dav2_nav/build/lib/dav2_nav
+running install
+running install_lib
+creating /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/lib/python3.12/site-packages/dav2_nav
+copying /home/mbot/DAV2-MBot-Nav/ros2_ws/build/dav2_nav/build/lib/dav2_nav/nav_node.py -> /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/lib/python3.12/site-packages/dav2_nav
+copying /home/mbot/DAV2-MBot-Nav/ros2_ws/build/dav2_nav/build/lib/dav2_nav/dav2_node.py -> /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/lib/python3.12/site-packages/dav2_nav
+copying /home/mbot/DAV2-MBot-Nav/ros2_ws/build/dav2_nav/build/lib/dav2_nav/__init__.py -> /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/lib/python3.12/site-packages/dav2_nav
+copying /home/mbot/DAV2-MBot-Nav/ros2_ws/build/dav2_nav/build/lib/dav2_nav/controller_node.py -> /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/lib/python3.12/site-packages/dav2_nav
+byte-compiling /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/lib/python3.12/site-packages/dav2_nav/nav_node.py to nav_node.cpython-312.pyc
+byte-compiling /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/lib/python3.12/site-packages/dav2_nav/dav2_node.py to dav2_node.cpython-312.pyc
+byte-compiling /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/lib/python3.12/site-packages/dav2_nav/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/lib/python3.12/site-packages/dav2_nav/controller_node.py to controller_node.cpython-312.pyc
+running install_data
+creating /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/share/ament_index
+creating /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/share/ament_index/resource_index
+creating /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/share/ament_index/resource_index/packages
+copying resource/dav2_nav -> /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/share/ament_index/resource_index/packages
+copying package.xml -> /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/share/dav2_nav
+creating /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/share/dav2_nav/launch
+copying launch/pipeline.launch.py -> /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/share/dav2_nav/launch
+creating /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/share/dav2_nav/config
+copying config/nav_params.yaml -> /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/share/dav2_nav/config
+running install_egg_info
+Copying ../../build/dav2_nav/dav2_nav.egg-info to /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/lib/python3.12/site-packages/dav2_nav-0.0.1-py3.12.egg-info
+running install_scripts
+Installing controller_node script to /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/lib/dav2_nav
+Installing dav2_node script to /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/lib/dav2_nav
+Installing nav_node script to /home/mbot/DAV2-MBot-Nav/ros2_ws/install/dav2_nav/lib/dav2_nav
+writing list of installed files to '/home/mbot/DAV2-MBot-Nav/ros2_ws/build/dav2_nav/install.log'
