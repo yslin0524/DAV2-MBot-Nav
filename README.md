@@ -1,5 +1,10 @@
 # DAV2-MBot-Nav
 
+![ROS 2 Jazzy](https://img.shields.io/badge/ROS2-Jazzy-blue)
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%205-red)
+
 **Closed-loop, single-camera obstacle avoidance for a Raspberry Pi 5 MBot, using Depth Anything V2 as the only depth sensor — no LiDAR, no GPU.**
 
 DAV2-MBot-Nav turns a pretrained monocular depth foundation model into a working navigation stack. A single RGB camera feeds Depth Anything V2, a lightweight three-region cost-map state machine turns each depth frame into a steering decision, and a decoupled controller drives the motors — the entire pipeline runs on an ARM CPU at ~1.1 FPS.
@@ -94,7 +99,9 @@ with `c(u,v) = 1` forced wherever `d(u,v) < d_close`, so close pixels saturate a
 The ROS 2 package expects the Depth Anything V2 code and checkpoint to live in a sibling repo at `~/DA-V2-for-RobotNav` (this is where `dav2_node` inserts its import path and resolves the checkpoint).
 
 ```bash
-# 1. Clone both repositories side by side in your home directory
+# 1. Clone both repositories side by side in your home directory.
+#    DA-V2-for-RobotNav is our team fork of Depth-Anything-V2; the evaluation
+#    scripts used for the results below live on the yslin/evaluate-metrics branch.
 cd ~
 git clone https://github.com/sy3da/DA-V2-for-RobotNav.git
 git clone https://github.com/yslin0524/DAV2-MBot-Nav.git
@@ -144,11 +151,20 @@ ros2 topic echo /cmd_vel       # motor commands
 ros2 topic hz /depth/image     # confirm ~1.1 FPS depth throughput
 ```
 
-**Off-robot depth / decision evaluation** (no robot required) is driven by the scripts in `DA-V2-for-RobotNav`, e.g. running the navigation policy over a folder of images:
+**Off-robot depth / decision evaluation** (no robot required). Run the navigation policy over a folder of images:
 
 ```bash
 cd ~/DA-V2-for-RobotNav
 python nav.py --img-path <folder> --encoder vits --nav --outdir vis_depth
+```
+
+To reproduce the pixel-level and decision-level metrics reported below, check out the evaluation branch of the team fork, which adds `prepare_eval_data.py`, `evaluate_metrics.py`, and the Colab notebook `evaluate_metrics_colab.ipynb`:
+
+```bash
+cd ~/DA-V2-for-RobotNav
+git checkout yslin/evaluate-metrics
+python prepare_eval_data.py      # convert NYU-D / KITTI GT depth to the eval format
+python evaluate_metrics.py       # free-space IoU + obstacle precision/recall
 ```
 
 ---
