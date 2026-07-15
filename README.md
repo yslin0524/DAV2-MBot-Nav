@@ -13,7 +13,13 @@ DAV2-MBot-Nav turns a pretrained monocular depth foundation model into a working
 
 ## Demo
 
-▶️ **[Watch the demo](https://drive.google.com/file/d/1aAROz0SflNBpwZT9C0bT-2HEoh2gTLGO/view?usp=sharing)** — skip to **0:45** for the autonomous obstacle-avoidance run.
+
+
+https://github.com/user-attachments/assets/964ff780-5e82-4704-879c-0903f14f712f
+
+
+
+
 
 ---
 
